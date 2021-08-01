@@ -1,0 +1,20 @@
+$x("//input") -> (14) [input.ddl-shortlink, input.ddl-facebooklink, input.ddl-twitterlink, input.ddl-emaillink, input.ddl-copylink, input.gLFyf.gsfi, input.gNO89b, input.RNmpXc, input.gNO89b, input.RNmpXc, input, input, input, input]
+
+$x("//input[@class='gLFyf gsfi']") ->[input.gLFyf.gsfi]
+ 
+$x("//input[@class='gLFyf gsfi']/../div") -> [div.pR49Ae.gsfi]  / up node
+
+$x("//input[@class='gLFyf gsfi']/parent::div")  -> [div.a4bIc] / root div
+
+$x("//input[@class='gLFyf gsfi']/ancestor ::div") -> $x("//input[@class='gLFyf gsfi']/ancestor ::div") / up to all root
+
+$x("//div[@class='a4bIc']//child::input") -> [input.gLFyf.gsfi] / child
+
+$x("//div[@class='a4bIc']//descendant::input") -> [input.gLFyf.gsfi] / naslednik
+
+$x("//div[@class='a4bIc']//following::style") -> [style, style, style, style, style, style, style, style, style, style, style, style, style, style, style, style, style]
+
+$x("//div[@class='a4bIc']//following-sibling::div") -> [div.dRYYxd, div.pR49Ae.gsfi]
+
+$x("//div[@class='a4bIc']//preceding::input") -> [input.ddl-copylink, input.ddl-emaillink, input.ddl-twitterlink, input.ddl-facebooklink, input.ddl-shortlink]
+
